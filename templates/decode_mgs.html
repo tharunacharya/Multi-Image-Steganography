@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="w3-card-4 w3-margin">
+
+    <header class="w3-container w3-blue">
+      <h1>Recent Stego-Images</h1>
+    </header>
+
+  <div class="w3-cell"> 
+    <img src="static/images/stegoImage.png" alt="Alps" style="width:100%">
+    <br>
+  </div>
+
+  <div class="w3-cell"> 
+    <img src="static/images/stegoImage1.png" alt="Alps" style="width:100%">
+    <br>
+  </div>
+
+    <form class="w3-container w3-margin" action="" method="post" enctype="multipart/form-data">
+        <!--input class="w3-btn w3-blue-grey" type="file" name="photo" accept="image/*"/>
+        <input class="w3-btn w3-blue-grey" name="sub" type="submit" value="Upload"-->
+        <input class="w3-btn w3-blue-grey" name="sub" type="submit" value="Decode">
+    </form>
+
+    <br>
+    <footer class="w3-container w3-blue">
+      <h5></h5>
+    </footer>
+    
+    </div>
+
+    <div class="w3-card-4 w3-margin">
+
+        <header class="w3-container w3-blue">
+          <h1>Decoded Message</h1>
+        </header>
+        
+        <div class="w3-container">
+          <p>{{ dmgs }} 
+        </p>
+        </div>
+        
+        <footer class="w3-container w3-blue">
+          <h5></h5>
+        </footer>
+    </div>
+
+    {% endblock %}
